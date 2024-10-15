@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#star{
+  color: #aaa;
+}
+.active{
+  background-color: #ffa500;
+  border-radius: 4px;
+}
+
+.munue span:first-child{
+  transform: rotate(-45deg) translate(-3px,3px);
+  transition: 0.5s;
+  width: 40px;
+  height: 5px;
+}
+.munue span:nth-child(2){
+  display: none;
+}
+.munue span:last-child{
+  transition: 0.5s;
+  width: 40px;
+  height: 5px;
+  transform: rotate(45deg);
+}
+
+.munueclas span:first-child{
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+.munueclas span:nth-child(2){
+  display: block;
+}
+.munueclas span:last-child{
+  transition: 0.1s;
+  transform: rotate(0deg);
+}
+ul{
+  background-color: black;
+  width: 100%;
+  left: 0;
+  top: 68px;
+  transition: all 5s;
+  position: absolute;
+  border-bottom: 1px solid white;
+}
+li:not(:last-child){
+  border-bottom: 1px solid #ffa500;
+}
+
+li{
+  padding: 10px;
+  margin: 15px 5px;
+}
